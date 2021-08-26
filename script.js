@@ -11,15 +11,19 @@ menuNames.addEventListener('click', function() {
 
 // Image carousel
 
+//starting at image one
 var imageIndex = 1;
 showImages(imageIndex)
 
+//writing a function keyword with parameter of num in round bracket
 function plusSlides(num) {
+    //adding one extra after the first image.
     showImages(imageIndex += num);
 
 };
-
+// another keyword function named currentSlides with parameter called num which is a number.
 function currentSlides(num) {
+    //the images will equal the numbers one from the next.
     showImages(imageIndex = num);
 };
 
