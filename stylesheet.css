@@ -4,7 +4,21 @@
     padding: 0;
     font-family: 'Indie Flower', cursive;
 } 
+html {
+    /*overflow: hidden;*/
+    width: 100%;
+    
+}
 
+
+body {
+    /*overflow: hidden; */
+    width: 100%;
+    background-color:lightsalmon; 
+    margin: 0;
+
+    
+} 
 
 /* start of nav bar */
  
@@ -27,11 +41,9 @@
     color:purple;
     justify-self: start;
     margin-left: 20px;
-}
-
-#navigation-initials {
     cursor: pointer;
 }
+
 
 .navigation-list {
     display: grid;
@@ -67,12 +79,14 @@
     transition: all 0.3s ease-out;
 }
 
-.menu-toggle .bar {
+.bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     background: #EA7070;
+    display: block;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -147,8 +161,6 @@
     }
 
     .menu-toggle .bar {
-        display: block;
-        cursor: pointer;
     }
 
     .menu-toggle:hover {
@@ -171,21 +183,7 @@
 
 /* nav bar section end */
 
-html {
-    /*overflow: hidden;*/
-    width: 100%;
-    
-}
 
-
-body {
-    /*overflow: hidden; */
-    width: 100%;
-    background-color:lightsalmon; 
-    margin: 0;
-
-    
-} 
 
 .check-across {
     background-color: #EA7070;
@@ -218,7 +216,6 @@ h2 {
 /* about me section begins */
 
 .about-container {
-    height: 130vh;
     background: rgb(71,150,166);
     background: radial-gradient(circle, rgba(71,150,166,1) 0%, rgba(223,221,188,1) 45%, rgba(236,201,214,1) 100%);
     margin: auto;
@@ -287,17 +284,21 @@ h2 {
     background-color: beige;
     border: 5px inset #53d0e9;
     padding: 5%;
-    font-size: 7px;
+    font-size: 29px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
 
 /* media query on about me page */
 
-@media all and (max-width: 1800px) and (min-width: 1025px), (min-width: 2560px) {
-    .about-container{
-        height: 300vh;
-    }
+@media all and (max-width: 2000px) and (min-width: 1801px) {
+    .text {
+        font-size: 26px;
+
+}
+}
+
+@media all and (max-width: 1800px) and (min-width: 1025px) {
     #about_me {
         font-size: 6em;
         border: 20px inset #53d0e9;
@@ -322,17 +323,20 @@ h2 {
 
 }
 
-@media all and (max-width: 1024px) and (min-width: 700px) {
-    .about-container{
-        height: 215vh;
+@media all and (max-width: 1800px) and (min-width: 1401px) {
+    .text {
+        font-size: 24px;
+        border: 20px inset #53d0e9;
     }
+}
+@media all and (max-width: 1024px) and (min-width: 700px) {
     #about_me{
         border: 10px inset #53d0e9;
         font-size: 3em;
     }
     .text{
         border: 10px inset #53d0e9;
-        font-size: 13px;
+        font-size: 12px;
     }
     #myself{
         border: 10px inset #53d0e9;
@@ -347,9 +351,6 @@ h2 {
 }
 
 @media all and (max-width: 699px) and (min-width: 520px) {
-    .about-container{
-        height: 145vh;
-    }
     .text{
         font-size: 8.5px;
     }
@@ -363,24 +364,31 @@ h2 {
 }
 
 @media all and (max-width: 519px) and (min-width: 481px) {
-    .about-container{
-        height: 150vh;
-    }
     .text{
         font-size: 9px;
     }
 
+    
+
+}
+
+@media all and (max-width: 480px) and (min-width: 426px) {
+    .text{
+        font-size: 8.2px;
+    }
+
+    
 
 }
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 376px) 
   and (max-device-width: 425px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .about-box--three{
         grid-row-end: 22;
     }
     .text{
-        font-size: 8px;
+        font-size: 7.1px;
     }
 
   }
@@ -389,7 +397,7 @@ h2 {
   and (max-device-width: 375px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .text {
-        font-size: 7.1px;
+        font-size: 7px;
     }
 
   }
@@ -400,7 +408,7 @@ h2 {
   and (max-device-width: 320px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .text {
-        font-size: 7.1px;
+        font-size: 7px;
     }
     .about-box--three{
         grid-row-end: 25;
@@ -411,9 +419,6 @@ h2 {
   and (min-device-width: 240px) 
   and (max-device-width: 300px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .about-container{
-        height: 130vh;
-    }
     .text {
         font-size: 6px;
     }
@@ -783,15 +788,9 @@ animation-duration: 2s;
     }
 
 #FAC-container {
-    height: 100vh;
     width: 100%;
     background-color: var(--clr-background);
-    display: table;
     padding: 5%;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-
 }
 
 /* dark mode of opposite colors for toggle button */
@@ -859,8 +858,8 @@ animation-duration: 2s;
 
 .apply {
     color: var(--clr-words);
-    font-size: 20px;
-    text-align: right;
+    font-size: 16px;
+    text-align: center;
     margin: 20px;
     padding: 1%;
     letter-spacing: 1em;
@@ -963,9 +962,6 @@ animation-duration: 2s;
  
     .color-switch {
 
-    margin-bottom: 655px;
-    margin-top: 185%;
-    margin-right: 0%;
 }
 
 }
@@ -990,11 +986,6 @@ animation-duration: 2s;
         margin-top: 10%;
      }
 
-     .color-switch {
-
-        margin-bottom: 555px;
-
-     }
 
 }
 
@@ -1008,7 +999,6 @@ animation-duration: 2s;
     }
     .color-switch {
         margin-top: 20%;
-        margin-right: 32%;
         margin-bottom: 0;
     }
 
@@ -1023,7 +1013,7 @@ footer {
 
 }
 
-#links_container {
+.links_container {
     height: 150vh;
     width: 100%;
     background-image: url(swirly-paint.jpeg);
@@ -1048,7 +1038,7 @@ footer {
     font-family: 'Indie Flower', cursive;
 }
 
-#website-link { 
+.website-link { 
     text-decoration: none;
     text-align: center;
     font-size: 50px;
@@ -1098,9 +1088,6 @@ hr {
 
 @media screen and (max-width: 1440px) {
 
-    #links-container {
-    background-image: url(swirly-paint.jpeg);
-    }
 
     #lk {
     font-size: 200px;
@@ -1131,15 +1118,12 @@ hr {
     font-size: 100px;
     }
 
-    #links-container {
-    background-image: url(swirly-paint.jpeg);
-    }
 
 }
 
 @media screen and (max-width: 425px) {
 
-     #website-link {
+     .website-link {
      font-size: 40px;
      }
      hr {
@@ -1155,7 +1139,7 @@ hr {
 
 @media screen and (max-width: 375px) {
 
-     #website-link{
+     .website-link{
      font-size: 30px;
      }
      .pjs-copyright p {
@@ -1166,11 +1150,7 @@ hr {
 }
 
 @media screen and (max-width: 320px) {
-    #links-container {
-    background-image: url(swirly-paint.jpeg);
-    padding-top: 55%;
-    }
-    #website-link {
+    .website-link {
     text-align: center;
     font-size: 25px;
     justify-content: center;
