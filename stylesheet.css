@@ -434,6 +434,11 @@ h2 {
     height: 100vh;
 }
 
+#carouselScroll {
+    padding-bottom: 5%;
+    text-align: center;
+}
+
 .art-title {
     font-size: 25px;
     text-align: center;
@@ -447,7 +452,7 @@ h2 {
 }
 
 .carousels {
-    max-width: 80%;
+    width: 80%;
     position: relative;
     margin: auto;
 }
@@ -455,14 +460,14 @@ h2 {
 .myCarousels {
 
     display: none; 
-    height: fit-content;
 } 
 
 
 .carousel-image {
-    vertical-align: middle;
     object-fit: cover;
-    margin-left: 100px;
+    display: block;
+    margin:auto;
+    width: 58%;
     border: 30px solid lightseagreen;
 
 }
@@ -532,13 +537,7 @@ animation-duration: 2s;
 
 @media screen and (max-width: 1440px) {
     .carousel-image {
-    margin-left: 280px;
     height: 650px;
-    object-fit: cover;
-    position: relative;
-    width: 58%;
-    margin: auto;
-    display: block;
     }
     .reverse, .forward {
     font-size: 100px;
@@ -555,13 +554,7 @@ animation-duration: 2s;
 
 @media screen and (max-width: 1024px) {
     .carousel-image {
-        margin-left: 280px;
         height: 550px;
-        object-fit: cover;
-        position: relative;
-        width: 58%;
-        margin: auto;
-        display: block;
        
     }
     .reverse, .forward {
@@ -585,10 +578,7 @@ animation-duration: 2s;
 
     .carousel-image {
     height: 535px;
-    position: relative;
     width: 100%;
-    margin: auto;
-    display: block;
 
     }
     .reverse, .forward {
@@ -616,10 +606,7 @@ animation-duration: 2s;
 @media screen and (max-width: 425px) {
     carousel-image {
         height: 435px;
-        position: relative;
         width: 100%;
-        margin: auto;
-        display: block;
 
 }
     .circle {
@@ -635,10 +622,7 @@ animation-duration: 2s;
 @media screen and (max-width: 375px) {
 
     .carousel-image {
-    width: 300px;
     height: 300px;
-    margin-top: 30%;
-    margin-left: 0px;
 
 }
    .reverse, .forward {
@@ -655,12 +639,8 @@ animation-duration: 2s;
 @media screen and (max-width: 320px) {
 
     .carousel-image {
-        object-fit: cover;
-        width: 260px;
         height: 300px;
-        margin-left: 0px;
         border: 6px solid lightseagreen;
-        position: sticky;
     
     }
 
@@ -683,9 +663,7 @@ animation-duration: 2s;
   and (min-device-width: 240px) 
   and (max-device-width: 319px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .carousel-image {
-        width: 200px;
-    }
+   
   }
 
 /* Images of art section end */
@@ -707,33 +685,25 @@ animation-duration: 2s;
 
 .all-interests {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 2em;
 } 
 
 
 .image-box {
-    justify-content: center;
     color: deeppink;
     border: 2px solid deeppink;
-    position: relative;
-    height: fit-content;
 
 }
 
 .coding {
-    justify-content: center;
     padding: 0;
     width: 100%;
-    position: static;
-    max-width: 300px;
-    max-height: 500px;
 }
 
 .txt-coding {
     font-family: monospace;
     text-align: center;
-    align-content: center;
     font-size: 38%;
     padding: 5%;
     margin: 0;
@@ -746,7 +716,6 @@ animation-duration: 2s;
         font-family: monospace;
         font-size: 12px;
         text-align: center;
-        justify-content: center;
         padding: 11%;
         margin-bottom: 20%;
 }
@@ -757,19 +726,15 @@ animation-duration: 2s;
      padding: 2%;
      margin: 0;
      text-align: center;
-     letter-spacing: normal;
      color: deeppink;
-     height: auto;
      width: 100%;
     
     
 } 
 
 .info {
-    justify-content: center;
     color: deeppink;
     border: 2px solid deeppink;
-    position: relative;
     padding: 10%;
 }
 
@@ -1014,7 +979,6 @@ footer {
 }
 
 .links_container {
-    height: 150vh;
     width: 100%;
     background-image: url(swirly-paint.jpeg);
     background-color: black; 
@@ -1042,7 +1006,6 @@ footer {
     text-decoration: none;
     text-align: center;
     font-size: 50px;
-    justify-content: center;
     padding: 5px;
     margin: 10px;
     display: block;
