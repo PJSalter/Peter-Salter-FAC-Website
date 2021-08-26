@@ -161,9 +161,6 @@ body {
         transform: translate(5%, 20%);
     }
 
-    .menu-toggle .bar {
-    }
-
     .menu-toggle:hover {
         cursor: pointer;
     }
@@ -182,6 +179,12 @@ body {
 
 }
 
+@media screen and (min-width: 769px){
+
+    .menu-toggle  {
+        visibility:hidden;
+    }
+}
 /* nav bar section end */
 
 
