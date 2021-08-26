@@ -172,14 +172,15 @@
 /* nav bar section end */
 
 html {
-    overflow-y: scroll;
+    /*overflow: hidden;*/
     width: 100%;
     
 }
 
 
 body {
-    overflow-x: hidden; 
+    /*overflow: hidden; */
+    width: 100%;
     background-color:lightsalmon; 
     margin: 0;
 
@@ -217,250 +218,210 @@ h2 {
 /* about me section begins */
 
 .about-container {
-    background-color: #D2D573;
-    display:block;
+    height: 130vh;
+    background: rgb(71,150,166);
+    background: radial-gradient(circle, rgba(71,150,166,1) 0%, rgba(223,221,188,1) 45%, rgba(236,201,214,1) 100%);
+    margin: auto;
+    padding: 5%;
+}
+
+
+#layout-bio-info{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem;
+    padding-top: 5%;
+}
+
+.about-box--one {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.about-box--two {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+
+.about-box--three {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 24;
+}
+    
+#myself {
     width: 100%;
-    padding: 10px;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-}
-    
-
-#me {
-    width: 150px;
-    height: 150px;
-    float: left;
-    border-radius: 50%;
-    margin: 10px;
-    shape-outside: circle();
-    
-}
-
-#young-me {
-    width: 100px;
-    height: 100px;
-    float: right;
-    border-radius: 50%;
-    margin: 10px;
-    shape-outside: circle();
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 5px inset #53d0e9;
 }
 
 #kittens {
-    width: 175px;
-    height: 175px;
-    float: left;
-    border-radius: 50%;
-    margin: 10px;
-    shape-outside: circle();
-}
-
-#oscar {
-    width: 125px;
-    height: 125px;
-    float: right;
-    border-radius: 50%;
-    margin: 20px;
-    shape-outside: circle();
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 5px inset #53d0e9;
 }
 
 #about_me  {
     color: darkorchid;
-    font-size: 5em;
+    background-color: beige;
+    border: 5px inset #53d0e9;
+    padding: 30px 0 30px;
+    font-size: 2em;
     margin: 0 auto;
+    position: relative;
+    text-align: center;
 }
 
 .text {
-        color:purple;
-        font-size: 1em;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0px;
-        text-align: center;
-        letter-spacing: -0.05em;
+    color: purple;
+    background-color: beige;
+    border: 5px inset #53d0e9;
+    padding: 5%;
+    font-size: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 /* media query on about me page */
 
-@media screen and (max-width: 1440px) {
-
+@media all and (max-width: 1800px) and (min-width: 1025px), (min-width: 2560px) {
+    .about-container{
+        height: 300vh;
+    }
     #about_me {
-    font-size: 6em;
+        font-size: 6em;
+        border: 20px inset #53d0e9;
     }
-    #me {
-    width: 375px;
-    height: 375px;
+    .text {
+        font-size: 18.5px;
+        border: 20px inset #53d0e9;
     }
-    #young-me {
-    width: 270px;
-    height: 270px;
+    .about-box--two {
+        grid-row-end: 28;
+    }
+    .about-box--three {
+        grid-row-start: 30;
+        grid-row-end: 30;
+    }
+    #myself{
+        border: 20px inset #53d0e9;
     }
     #kittens {
-    width: 260px;
-    height: 260px;
-    margin: 1px;
-    }
-    #oscar {
-    width: 200px;
-    height: 200px;
-    }
-    .text {
-    font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-
-    #about_me {
-    font-size: 4em;
-    }
-
-    #me {
-    width: 300px;
-    height: 300px;
-    }
-    #young-me {
-    width: 200px;
-    height: 200px;
-    }
-
-    #oscar {
-    width: 140px;
-    height: 140px;
-    margin: 0%;
-    }
-
-    #kittens {
-    width: 150px;
-    height: 150px;
-    margin: 0;
-    }
-    .text {
-    font-size: 14px;
-    }
-
-
-
-}
-
-
-@media screen and (max-width: 768px) {
-
-    #about_me {
-    font-size: 2em;
-    }
-    .text {
-    font-size: 10px;
-    }
-    #kittens {
-    width: 120px;
-    height: 120px;
-    margin: 1px;
-    }
-    #oscar {
-    width: 125px;
-    height: 125px;
-    margin: 2px;
-    }
-    #young-me {
-    width: 140px;
-    height: 140px;
-    margin: 10px;
-    }
-    #me {
-    width: 250px;
-    height: 250px;
-    margin: 10px;
-    }
-
-
-}
-
-@media screen and (max-width: 425px) {
-
-    #about_me  {
-    font-size: 30px;
-    }
-    #me {
-    margin: 1px;
-    width: 150px;
-    height: 150px;
-    }
-
-    #kittens {
-    width: 90px;
-    height: 90px;
-     }
-     #young-me {
-     margin: 1px;
-     width: 120px;
-     height: 120px;
-     }
-
-    .text {
-    font-size: 8px;
-    padding: 0px;
-    }
-    #oscar {
-    margin: 2px;
-    width: 100px;
-    height: 100px;
+        border: 20px inset #53d0e9;
     }
 
 }
 
-@media screen and (max-width: 375px) {
-
-    .text {
-    font-size: 7.1px;
-    padding: 0;
+@media all and (max-width: 1024px) and (min-width: 700px) {
+    .about-container{
+        height: 215vh;
     }
-    #oscar {
-    margin: 2px;
-    width: 115px;
-    height: 115px;
+    #about_me{
+        border: 10px inset #53d0e9;
+        font-size: 3em;
     }
-    #me {
-    margin: 1px;
+    .text{
+        border: 10px inset #53d0e9;
+        font-size: 13px;
     }
-    #young-me {
-    margin: 1px;
+    #myself{
+        border: 10px inset #53d0e9;
     }
-    #kittens {
-    margin: 0px;
+    #kittens{
+        border: 10px inset #53d0e9;
+    }
+    .about-box--three{
+        grid-row-end: 30;
     }
 
 }
 
+@media all and (max-width: 699px) and (min-width: 520px) {
+    .about-container{
+        height: 145vh;
+    }
+    .text{
+        font-size: 8.5px;
+    }
+    .about-box--two{
+        grid-row-end: 8;
+    }
+    .about-box--three{
+        grid-row-start: 8;
+        grid-row-end: 19;
+    }
+}
 
-@media screen and (max-width: 320px) {
-
-    #about_me  {
-    font-size: 29px;
+@media all and (max-width: 519px) and (min-width: 481px) {
+    .about-container{
+        height: 150vh;
+    }
+    .text{
+        font-size: 9px;
     }
 
-    .text {
-     font-size: 44%;
-     padding: 0;
-     }
-     #me {
-        width: 110px;
-        height: 110px;
-        shape-outside: circle(50%);
-     }
-     #kittens {
-        width: 100px;
-        height: 100px;
-        shape-outside: circle(50%);
-     }
-     #oscar {
-     width: 100px;
-     height: 100px;
-     shape-outside: circle(50%);
-     }
+
 }
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 425px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .about-box--three{
+        grid-row-end: 22;
+    }
+    .text{
+        font-size: 8px;
+    }
+
+  }
+  @media only screen 
+  and (min-device-width: 321px) 
+  and (max-device-width: 375px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .text {
+        font-size: 7.1px;
+    }
+
+  }
+
+
+@media only screen 
+  and (min-device-width: 301px) 
+  and (max-device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .text {
+        font-size: 7.1px;
+    }
+    .about-box--three{
+        grid-row-end: 25;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 240px) 
+  and (max-device-width: 300px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .about-container{
+        height: 130vh;
+    }
+    .text {
+        font-size: 6px;
+    }
+    .about-box--three {
+        grid-row-end: 23;
+    }
+
+  }
 
 /* image carousel page */
 
@@ -713,7 +674,16 @@ animation-duration: 2s;
 
 }
 
-/* about me section end */
+@media only screen 
+  and (min-device-width: 240px) 
+  and (max-device-width: 319px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .carousel-image {
+        width: 200px;
+    }
+  }
+
+/* Images of art section end */
 
 
 
@@ -813,6 +783,8 @@ animation-duration: 2s;
     }
 
 #FAC-container {
+    height: 100vh;
+    width: 100%;
     background-color: var(--clr-background);
     display: table;
     padding: 5%;
@@ -910,7 +882,7 @@ animation-duration: 2s;
     background-color: var(--clr-box);
     color: var(--clr-words);
     padding: 2%;
-    height: 80%;
+    height: 60%;
     width: 50%;
     float: right;
     border: 8px solid var(--clr-border);
@@ -1026,6 +998,22 @@ animation-duration: 2s;
 
 }
 
+@media only screen 
+  and (min-device-width: 240px) 
+  and (max-device-width: 319px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .color-switch::before {
+        padding: 15%;
+        left: -125px;
+    }
+    .color-switch {
+        margin-top: 20%;
+        margin-right: 32%;
+        margin-bottom: 0;
+    }
+
+  }
+
 /* apply page end */
 
 /* Links page and footer begins */
@@ -1036,6 +1024,8 @@ footer {
 }
 
 #links_container {
+    height: 150vh;
+    width: 100%;
     background-image: url(swirly-paint.jpeg);
     background-color: black; 
     background-position: center center; 
@@ -1046,7 +1036,6 @@ footer {
 #lk {
     text-align: center;
     font-size: 30px;
-    margin-top: -90%;
     color: lightgoldenrodyellow;
     font-family: 'Indie Flower', cursive;
 }
@@ -1097,7 +1086,6 @@ hr {
 }
 
 .pjs-copyright p {
-
     color: lightgoldenrodyellow;
     justify-content: center;
     text-align: center;
@@ -1116,7 +1104,6 @@ hr {
 
     #lk {
     font-size: 200px;
-    padding-top: 40%;
     }
     .bg-info {
     font-size: 90px;
@@ -1129,7 +1116,6 @@ hr {
 
     #lk {
     font-size: 150px;
-    margin-top: -100%;
     }
 
     .bg-info {
@@ -1153,9 +1139,6 @@ hr {
 
 @media screen and (max-width: 425px) {
 
-     #lk {
-     margin-top: -180%;
-     }
      #website-link {
      font-size: 40px;
      }
@@ -1172,10 +1155,6 @@ hr {
 
 @media screen and (max-width: 375px) {
 
-    #lk {
-    margin-top: -240%;
-    }
-
      #website-link{
      font-size: 30px;
      }
@@ -1189,9 +1168,7 @@ hr {
 @media screen and (max-width: 320px) {
     #links-container {
     background-image: url(swirly-paint.jpeg);
-    }
-    #lk {
-     margin-top: -240%;
+    padding-top: 55%;
     }
     #website-link {
     text-align: center;
