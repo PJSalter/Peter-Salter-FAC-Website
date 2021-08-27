@@ -197,9 +197,6 @@ body {
     background-position: 0 0, 30px 30px; 
     height: 100vh;
     display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -927,13 +924,6 @@ animation-duration: 2s;
 
 }
 
-@media screen and (max-width: 375px) {
- 
-    .color-switch {
-
-}
-
-}
 
 @media screen and (max-width: 320px) {
     div.edgebox--left {
@@ -1044,7 +1034,6 @@ hr {
 
 .pjs-copyright p {
     color: lightgoldenrodyellow;
-    justify-content: center;
     text-align: center;
     font-size: 30px;
     font-family: 'Indie Flower', cursive;
