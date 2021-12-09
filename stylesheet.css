@@ -1007,18 +1007,18 @@ footer {
     color:lightseagreen;
 }
 
-.fa fa-github {
+i.fa-github-square {
   
-    content: "\f09b";
+    content: "f09b";
     font-weight: 900;
-    font-family: 'FontAwesome';
+    /*font-family: 'FontAwesome';*/
     font-style: normal; 
 }
 
-.fab fa-free-code-camp {
-    content: "\f2c5";
+i.fa-free-code-camp {
+    content: "f2c5";
     font-weight: 900;
-    font-family: 'FontAwesome';
+    /*font-family: 'FontAwesome';*/
     font-style: normal; 
 }
 
