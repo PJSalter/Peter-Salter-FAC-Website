@@ -1,3 +1,5 @@
+//..........................Whack-A-Cat-Game......................................//
+
 const allThatCandy = document.querySelectorAll('.candy');
 const scoreBoard = document.querySelector('.cat-candy-score');
 const cuteCat = document.querySelectorAll('.cat');
