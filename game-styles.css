@@ -1,6 +1,6 @@
 *, *:before, *:after {
     box-sizing: inherit;
-    font-family: 'Fuzzy Bubbles', cursive;
+    /*font-family: 'Fuzzy Bubbles', cursive;*/
   }
 
   #game_container{
@@ -28,6 +28,7 @@ h1 {
   
   .begin-the-whack{
     display: flex;
+    font-family: 'Fuzzy Bubbles', cursive;
     font-size: 2rem;
     align-items: center;
     justify-content: center;
