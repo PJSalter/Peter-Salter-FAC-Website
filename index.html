@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="game-styles.css" media="screen"/>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <title>Peter Salter</title>
 </head>
@@ -26,21 +28,25 @@
             <ul class="navigation-list">
                 <!--Item One-->
                 <li>
-                    <a href="#about_me" class="nav-links">About Me</a>
+                     <a href="#game_container" class="nav-links">Whack-A-Cat</a>
                 </li>
                 <!--Item Two-->
                 <li>
-                    <a href="#carousel_container" class="nav-links">Images</a>
+                    <a href="#about_me" class="nav-links">About Me</a>
                 </li>
                 <!--Item Three-->
                 <li>
-                    <a href="#all_interests" class="nav-links">Interests</a>
+                    <a href="#carousel_container" class="nav-links">Images</a>
                 </li>
                 <!--Item Four-->
                 <li>
-                    <a href="#applying"class="nav-links">Why me?</a>
+                    <a href="#all_interests" class="nav-links">Interests</a>
                 </li>
                 <!--Item Five-->
+                <li>
+                    <a href="#applying"class="nav-links">Why me?</a>
+                </li>
+                <!--Item Six-->
                 <li>
                     <a href="#links_container" class="nav-links nav-links-btn">Links</a>
                 </li>
@@ -55,6 +61,32 @@
     </header>
 
     <main>
+
+        <div id="game_container">
+            <h1>Whack-a-cat! <span class="cat-candy-score">0</span></h1>
+            <button class="begin-the-whack" onClick="startGame()">Start!</button>
+          
+            <div class="the-hole-6-cats-game">
+              <div class="candy candy1">
+                <div class="cat"></div>
+              </div>                     
+              <div class="candy candy2">
+                <div class="cat"></div>
+              </div>
+              <div class="candy candy3">
+                <div class="cat"></div>
+              </div>
+              <div class="candy candy4">
+                <div class="cat"></div>
+              </div>
+              <div class="candy candy5">
+                <div class="cat"></div>
+              </div>
+              <div class="candy candy6">
+                <div class="cat"></div>
+              </div>
+          </div>
+        </div>
     
 <section class="about-container">
   
@@ -311,7 +343,7 @@
 
 <footer>
 
-<div class="links_container">
+<div id="links_container">
 
            <!-- <img src="swirly-paint.jpeg" alt="Acrylic Paint strokes"> -->
            
@@ -334,7 +366,7 @@
        
 </div>
 </footer>
-
+    <script src="game.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -754,7 +754,7 @@ animation-duration: 2s;
     }
 
 #FAC-container {
-    width: 100%;
+    /*width: 100%;*/
     background-color: var(--clr-background);
     padding: 5%;
 }
@@ -835,7 +835,7 @@ animation-duration: 2s;
     padding: 2%;
     background-color: var(--clr-box);
     color: var(--clr-words);
-    width: 40%;
+   /* width: 40%;*/
     float: left;
     border: 4px solid var(--clr-border);
     -webkit-border-radius: 30px;
@@ -848,7 +848,7 @@ animation-duration: 2s;
     color: var(--clr-words);
     padding: 2%;
     height: 60%;
-    width: 50%;
+    /*width: 50%;*/
     float: right;
     border: 8px solid var(--clr-border);
     -webkit-border-radius: 30px;
@@ -861,7 +861,7 @@ animation-duration: 2s;
     padding: 2%;
     background-color: var(--clr-box);
     color: var(--clr-words);
-    width: 40%;
+    /*width: 40%;*/
     float: left;
     border: 4px solid var(--clr-border);
     -webkit-border-radius: 30px;
@@ -873,7 +873,7 @@ animation-duration: 2s;
 .bottom {
     background: var(--clr-border);
     color: var(--clr-words);
-    padding: 1em;
+    /*padding: 1em;*/
     margin-top: 50%;
     clear: both;
     margin: 10px 0px 10px 0px;
@@ -927,21 +927,21 @@ animation-duration: 2s;
 
 @media screen and (max-width: 320px) {
     div.edgebox--left {
-       width: 100%;
+       /*width: 100%;*/
        padding: 3%;
        margin-top: 10%;
     }
     div.edgebox--right {
-        width: 100%;
+        /*width: 100%;*/
         margin-top: 10%;
      }
      div.middle-top {
-        width: 100%;
+        /*width: 100%;*/
         margin-top: 10%;
      }
 
      div.bottom {
-        width: 100%;
+        /*width: 100%;*/
         margin-top: 10%;
      }
 
@@ -972,7 +972,7 @@ footer {
 
 }
 
-.links_container {
+#links_container {
     width: 100%;
     background-image: url(website-images/swirly-paint.jpeg);
     background-color: black; 
