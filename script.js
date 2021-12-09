@@ -63,13 +63,13 @@ colorConvert.addEventListener('click',checkMode);
 // I want this function to check if dark mode is enabled. if it isnt then I want it to check.
 
 function checkMode() {
-    console.log('checking...');
+    //console.log('checking...');
     // This will check if its on.
     if(colorConvert.checked) {
        console.log('dark on');
        darkModeOn();
     } else { 
-        console.log('dark off');
+        //console.log('dark off');
         darkModeOff();
     }
 
