@@ -182,15 +182,6 @@ body {
 }
 /* nav bar section end */
 
-@media screen and (min-width: 1024px){
-    #name{
-        font-size: 150px;
-    }
-    h2{
-        font-size: 100px;
-    }
-}
-
 .check-across {
     background-color: #EA7070;
     background-image: linear-gradient(45deg, #6A4577 25%, transparent 25%, transparent 75%, #6A4577 75%, #6A4577),
@@ -214,6 +205,15 @@ h2 {
     text-align: center;
     font-weight: lighter;
     font-size: 25px;
+}
+
+@media screen and (min-width: 1024px){
+    #name{
+        font-size: 140px;
+    }
+    h2{
+        font-size: 100px;
+    }
 }
 
 /* about me section begins */
