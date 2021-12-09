@@ -182,7 +182,14 @@ body {
 }
 /* nav bar section end */
 
-
+@media screen and (min-width: 1024px){
+    #name{
+        font-size: 150px;
+    }
+    h2{
+        font-size: 100px;
+    }
+}
 
 .check-across {
     background-color: #EA7070;
