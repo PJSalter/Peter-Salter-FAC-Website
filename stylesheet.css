@@ -579,7 +579,7 @@ animation-duration: 2s;
 
     .carousel-image {
     height: 535px;
-    width: 80%;
+    width: 100%;
 
     }
     .reverse, .forward {
@@ -624,6 +624,7 @@ animation-duration: 2s;
 
     .carousel-image {
     height: 300px;
+    width: 80%
 
 }
    .reverse, .forward {
