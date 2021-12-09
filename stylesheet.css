@@ -649,7 +649,7 @@ animation-duration: 2s;
     .reverse, .forward {
         font-size: 25px;
         margin-top: -20%;
-        padding: 20px;
+        padding: 0px;
 
     }
 
