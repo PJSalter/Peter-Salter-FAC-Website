@@ -1,0 +1,155 @@
+
+/*
+html {
+    box-sizing: border-box;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 10px;
+    padding: 40px;
+    background: rgb(70,240,211);
+    background: radial-gradient(circle, rgba(70,240,211,1) 0%, rgba(233,224,148,1) 100%);;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-family: 'Fuzzy Bubbles', cursive;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  
+  }
+
+  */
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-family: 'Fuzzy Bubbles', cursive;
+  }
+
+  #game_container{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 10px;
+    padding: 40px;
+    background: rgb(70,240,211);
+    background: radial-gradient(circle, rgba(70,240,211,1) 0%, rgba(233,224,148,1) 100%);
+  }
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1;
+    color:#6b94d7;
+    text-shadow: 5px 5px#2073fb;
+  }
+  
+  .cat-candy-score {
+    background: rgb(238, 133, 220);
+    padding: 0 2rem;
+    line-height: 1;
+    border-radius: 1rem;
+  }
+  
+  .begin-the-whack{
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.49em 4em;
+    border: 0.1em solid rgb(238, 133, 220);
+    margin: 0 auto;
+    height: 50%;
+    width: 50%;
+    border-radius: 0.22em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(238, 133, 220);
+    transition: all 0.4s;
+  }
+  
+  .begin-the-whack:hover{
+    background-color:#FFFFFF;
+  }
+  
+  
+  .the-hole-6-cats-game {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .candy {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .candy:after {
+    display: block;
+    background: url(website-images/cottoncandy.png) bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height:70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+  }
+  
+  
+  .cat {
+    background: url(website-images/catjump.png) bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition:all 0.4s; /*0.4s*/
+  }
+  
+  .candy.up .cat {
+    top: 0;
+  }
+
+  @media screen and (max-width: 425px) {
+    .the-hole-6-cats-game{
+    width: 350px;
+    height: 200px;
+    }
+    .cat{
+        background-size: 100%;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .the-hole-6-cats-game{
+        width: 300px;
+        height: 150px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .the-hole-6-cats-game{
+    width: auto;
+    height: 200px;
+    }
+    .begin-the-whack{
+    margin-top: 20%;
+    padding: 0.1em 2em;
+    height: 25%;
+    width: 25%;
+    }
+   h1{
+    font-size: 2.5rem;
+   }
+   .cat-candy-score{
+    padding: 0 2%;
+   }
+   .cat{
+    background-size: 100%;
+   }
+  }
+
