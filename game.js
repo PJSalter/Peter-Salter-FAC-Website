@@ -39,7 +39,7 @@ function startGame() {
 }
 
 function bonkInThatCandy(e) {
-  if(!e.isTrusted) return; // cheater!
+  if(!e.isTrusted) return; 
   score++;
   this.parentNode.classList.remove('up');
   scoreBoard.textContent = score;
