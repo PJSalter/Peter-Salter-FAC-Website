@@ -1,3 +1,5 @@
+//...................................JavaScript Code for nav bar, image Carousel and light and dark button................................................//
+
 
 // nav bar code
 
