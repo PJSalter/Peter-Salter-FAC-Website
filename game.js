@@ -1,5 +1,6 @@
 //..........................Whack-A-Cat-Game......................................//
 
+//all variables that decalare querySelectors with connect the classes from the html
 const allThatCandy = document.querySelectorAll('.candy');
 const scoreBoard = document.querySelector('.cat-candy-score');
 const cuteCat = document.querySelectorAll('.cat');
