@@ -6,19 +6,14 @@
     font-family: 'Indie Flower', cursive;
 } 
 html {
-    /*overflow: hidden;*/
     width: 100%;
-    
 }
 
 
 body {
-    /*overflow: hidden; */
     width: 100%;
     background-color:lightsalmon; 
     margin: 0;
-
-    
 } 
 
 /* start of nav bar */
