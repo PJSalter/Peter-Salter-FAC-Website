@@ -48,7 +48,7 @@ body {
 
 .navigation-list {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(6, auto);
     list-style: none;
     text-align: center;
     width: 70%;
