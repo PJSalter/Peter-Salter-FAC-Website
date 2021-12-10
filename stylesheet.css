@@ -411,8 +411,8 @@ h2 {
   and (max-device-width: 320px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .text {
-        padding: 3%;
-        font-size: 6.7px;
+        padding: 2%;
+        font-size: 6.4px;
     }
     .about-box--three{
         grid-row-end: 25;
