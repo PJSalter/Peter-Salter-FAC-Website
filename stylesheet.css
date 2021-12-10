@@ -399,6 +399,9 @@ h2 {
   and (min-device-width: 321px) 
   and (max-device-width: 375px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    .about-container{
+        padding-bottom: 20%;
+    }
     .text {
         font-size: 7px;
     }
