@@ -35,23 +35,36 @@ function randomCandy(allThatCandy) {
   return candy;
 }
 
+//a function that gets the cheeky cats to pop up from the candy
+
 function popUp() {
+  //gives a random time and speed
   const time = randomTime(200, 1000);
+  //from a random cotton candy
   const candyHeaven = randomCandy(allThatCandy);
+  //adding a class of up with triggers the css
   candyHeaven.classList.add('up');
+  //after an amount of time the cats pop up, then would need to pop down with an amount of time, adding a classlist to remove up.
   setTimeout(() => {
       candyHeaven.classList.remove('up');
     if (!timeUp) popUp();
   }, time);
 }
 
+//function on starting the game
+
 function startGame() {
+  //setting the score to zero
   scoreBoard.textContent = 0;
   timeUp = false;
   score = 0;
+  //calling the function of pop up for the cats 
   popUp();
+  //making the function true by speed of 1000 ms
   setTimeout(() => timeUp = true, 10000)
 }
+
+//a function that bonks the cats on the head once user clicks
 
 function bonkInThatCandy(e) {
   if(!e.isTrusted) return; 
