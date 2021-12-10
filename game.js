@@ -67,10 +67,12 @@ function startGame() {
 //a function that bonks the cats on the head once user clicks
 
 function bonkInThatCandy(e) {
-  if(!e.isTrusted) return; 
-  score++;
+  if(!e.isTrusted) return; //if they fake click
+  score++; // plussing one each time 
   this.parentNode.classList.remove('up');
   scoreBoard.textContent = score;
 }
+
+//taking each cat and listening for a click bonk the user clicks from if they catch them
 
 cuteCat.forEach(cat => cat.addEventListener('click', bonkInThatCandy));
