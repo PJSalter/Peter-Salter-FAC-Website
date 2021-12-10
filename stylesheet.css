@@ -223,6 +223,7 @@ h2 {
     background: radial-gradient(circle, rgba(71,150,166,1) 0%, rgba(223,221,188,1) 45%, rgba(236,201,214,1) 100%);
     margin: auto;
     padding: 5%;
+    padding-bottom: 20%;
 }
 
 
@@ -399,9 +400,9 @@ h2 {
   and (min-device-width: 321px) 
   and (max-device-width: 375px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .about-container{
+    /* .about-container{
         padding-bottom: 20%;
-    }
+    } */
     .text {
         font-size: 7px;
     }
