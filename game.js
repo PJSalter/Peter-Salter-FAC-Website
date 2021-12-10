@@ -1,13 +1,18 @@
 //..........................Whack-A-Cat-Game......................................//
 
 //all variables that decalare querySelectors with connect the classes from the html
+
+//selected all the cotton candy
 const allThatCandy = document.querySelectorAll('.candy');
+//selected the score board that will appear with the number of amount of cats you whack
 const scoreBoard = document.querySelector('.cat-candy-score');
+//selected all the cats 
 const cuteCat = document.querySelectorAll('.cat');
 let lastHole;
 let timeUp = false;
 let score = 0;
 
+//picks a random time in milliseconds from min to max
 function randomTime(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
