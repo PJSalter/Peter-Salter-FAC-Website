@@ -93,11 +93,11 @@ h1 {
 
   @media all and (max-width: 480px) and (min-width: 426px) {
     .the-hole-6-cats-game{
-      width: auto;
+      width: 100%;
       height: 500px;
     }
     .cat{
-     background-size: 130%;
+     background-size: 122%;
     }
   }
 
