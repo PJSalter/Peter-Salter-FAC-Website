@@ -483,7 +483,7 @@ h2 {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 20px;
+    /* padding: 20px; */
     margin-top: -22px;
     color: deeppink;
     font-weight: bold;
@@ -542,10 +542,11 @@ animation-duration: 2s;
 
 
 @media screen and (max-width: 1440px) {
-   /* .carousel-image {
+   .carousel-image {
+    margin-left: 7%;
     height: 650px;
     width: 100%;
-    } */
+   }
     .reverse, .forward {
     font-size: 100px;
     top: 40%;
@@ -560,11 +561,11 @@ animation-duration: 2s;
 }
 
 @media screen and (max-width: 1024px) {
-   /* .carousel-image {
+   .carousel-image {
         height: 550px;
         width: 100%;
-       
-    }*/
+        margin-left: 51px;
+    }
     .reverse, .forward {
      top: 190px;
      font-size: 80px;
@@ -584,15 +585,16 @@ animation-duration: 2s;
 
 @media screen and (max-width: 768px) {
 
-   /* .carousel-image {
+    .carousel-image {
         height: 500px;
-        margin-left: -28px
+        margin-left: 6%;
+        /* margin-left: -28px */
 
-    }*/
+    }
     .reverse, .forward {
         margin-left: 1px;
         font-size: 50px;
-        padding: 40px;
+        padding: 0;
         margin-top: 1px;
     
     }
@@ -611,12 +613,14 @@ animation-duration: 2s;
 }
 
 
-@media screen and (max-width: 425px) {
-   /*  carousel-image {
-        height: 435px;
+@media screen and (min-width: 425px) {
+     carousel-image {
+        margin-left: 10%;
+        height: auto;
         width: 100%;
+        padding: 2%;
 
-} */
+} 
     .circle {
         height: 9px;
         width: 9px;
@@ -629,11 +633,12 @@ animation-duration: 2s;
 
 @media screen and (max-width: 375px) {
 
- /* .carousel-image {
+  .carousel-image {
+    margin-left: 15%;
     height: 300px;
     width: 80%
 
-} */
+} 
    .reverse, .forward {
     font-size: 50px;
     padding: 2px;
@@ -647,11 +652,12 @@ animation-duration: 2s;
 
 @media screen and (max-width: 320px) {
 
-   /*  .carousel-image {
+   .carousel-image {
         height: 300px;
+        margin-left: 15%;
         border: 6px solid lightseagreen;
     
-    } */
+    } 
 
     .reverse, .forward {
         font-size: 25px;
@@ -667,13 +673,13 @@ animation-duration: 2s;
     }
 
 }
-
+/*
 @media only screen 
   and (min-device-width: 240px) 
   and (max-device-width: 319px)
   and (-webkit-min-device-pixel-ratio: 2) {
    
-  }
+  } */
 
 /* Images of art section end */
 
