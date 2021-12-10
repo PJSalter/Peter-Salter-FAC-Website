@@ -24,12 +24,14 @@ function randomTime(min, max) {
 function randomCandy(allThatCandy) {
   const idx = Math.floor(Math.random() * allThatCandy.length);
   const candy = allThatCandy[idx];
+  //statement that explains if it ends up being the same candy
   if (candy === lastCotton) {
     //console.log('oh dear thats the same one eek');
     return randomCandy(allThatCandy);
   }
   //having it saved as a reference to the candy that got chosen from last time
   lastCotton = candy;
+  //else it should not return with the same candy 
   return candy;
 }
 
