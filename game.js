@@ -28,6 +28,7 @@ function randomCandy(allThatCandy) {
     //console.log('oh dear thats the same one eek');
     return randomCandy(allThatCandy);
   }
+  //having it saved as a reference to the candy that got chosen from last time
   lastCotton = candy;
   return candy;
 }
