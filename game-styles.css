@@ -91,6 +91,13 @@ h1 {
     top: 0;
   }
 
+  @media all and (max-width: 519px) and (min-width: 481px) {
+    .the-hole-6-cats-game{
+      width: 100%;
+    }
+  
+  }
+
   @media all and (max-width: 480px) and (min-width: 426px) {
     .the-hole-6-cats-game{
       width: 100%;
