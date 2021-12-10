@@ -456,8 +456,9 @@ h2 {
 
 .carousels {
     width: 80%;
+    padding-right: 12%;
     position: relative;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .myCarousels {
@@ -469,9 +470,11 @@ h2 {
 .carousel-image {
     object-fit: cover;
     display: block;
-    margin:auto;
-    width: 58%;
-    border: 30px solid lightseagreen;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    /* width: 58%; */
+    border: 10px solid lightseagreen;
 
 }
 
@@ -539,9 +542,10 @@ animation-duration: 2s;
 
 
 @media screen and (max-width: 1440px) {
-    .carousel-image {
+   /* .carousel-image {
     height: 650px;
-    }
+    width: 100%;
+    } */
     .reverse, .forward {
     font-size: 100px;
     top: 40%;
@@ -556,10 +560,11 @@ animation-duration: 2s;
 }
 
 @media screen and (max-width: 1024px) {
-    .carousel-image {
+   /* .carousel-image {
         height: 550px;
+        width: 100%;
        
-    }
+    }*/
     .reverse, .forward {
      top: 190px;
      font-size: 80px;
@@ -579,11 +584,11 @@ animation-duration: 2s;
 
 @media screen and (max-width: 768px) {
 
-    .carousel-image {
-    height: 535px;
-    width: 100%;
+   /* .carousel-image {
+        height: 500px;
+        margin-left: -28px
 
-    }
+    }*/
     .reverse, .forward {
         margin-left: 1px;
         font-size: 50px;
@@ -607,11 +612,11 @@ animation-duration: 2s;
 
 
 @media screen and (max-width: 425px) {
-    carousel-image {
+   /*  carousel-image {
         height: 435px;
         width: 100%;
 
-}
+} */
     .circle {
         height: 9px;
         width: 9px;
@@ -624,11 +629,11 @@ animation-duration: 2s;
 
 @media screen and (max-width: 375px) {
 
-    .carousel-image {
+ /* .carousel-image {
     height: 300px;
     width: 80%
 
-}
+} */
    .reverse, .forward {
     font-size: 50px;
     padding: 2px;
@@ -642,11 +647,11 @@ animation-duration: 2s;
 
 @media screen and (max-width: 320px) {
 
-    .carousel-image {
+   /*  .carousel-image {
         height: 300px;
         border: 6px solid lightseagreen;
     
-    }
+    } */
 
     .reverse, .forward {
         font-size: 25px;
