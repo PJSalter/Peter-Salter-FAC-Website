@@ -8,7 +8,7 @@ const allThatCandy = document.querySelectorAll('.candy');
 const scoreBoard = document.querySelector('.cat-candy-score');
 //selected all the cats 
 const cuteCat = document.querySelectorAll('.cat');
-let lastHole;
+let lastCotton;
 let timeUp = false;
 let score = 0;
 
@@ -17,14 +17,18 @@ function randomTime(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
 
+//writing a function that picks a random whole for the cat to pop up from
+//this takes in a whole list of cotton candy
+//places in an array of 0 - 5 giving a length of six candies and randomly picking a candy from what the cat jumps out of
+
 function randomCandy(allThatCandy) {
   const idx = Math.floor(Math.random() * allThatCandy.length);
   const candy = allThatCandy[idx];
-  if (candy === lastHole) {
+  if (candy === lastCotton) {
     //console.log('oh dear thats the same one eek');
     return randomCandy(allThatCandy);
   }
-  lastHole = candy;
+  lastCotton = candy;
   return candy;
 }
 
