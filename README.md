@@ -5,6 +5,20 @@
 
 ![application-website-screenshot](https://user-images.githubusercontent.com/45575016/151586450-25a2521e-9018-4a31-9589-df1e55d58e91.png)
 
+# The website Requirements:
+
+##### - *This website needed to explain a story about myself, to show my personality and what I enjoy the most.* #####
+
+##### - *To explain to Founders and Coders why I am applying for the skills Boot Camp.* #####
+
+##### - *Showing my capabilities and skills in HTML, CSS and JavaScript.* #####
+
+##### - *My code could not use any external libraries(e.g. no Bootstrap, React or GitHub Pages themes, but external fonts/icons are fine).* #####
+
+# What I included in my website:
+
+
+
 
 ## I've recently updated my website with a fun interactive Whack-A-Cat game :cat: :paw_prints:. This consists of the cats pouncing and jumping out of Cotton Candy :pouting_cat: :lollipop: for you the user to click on the cheeky cat :cat2: to whack it back then gain a point for how many cheeky cats your able to catch :smiley_cat:. In order to start the game You the User must click on the start button for the cats to get ready to pounce :joy_cat: :candy: :dango: :lollipop: :joy_cat:.
 
