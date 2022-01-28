@@ -30,7 +30,9 @@
 
 #### I've recently updated my website with a fun interactive Whack-A-Cat game :cat: :paw_prints:. This consists of the cats pouncing and jumping out of Cotton Candy :pouting_cat: :lollipop: for you the user to click on the cheeky cat :cat2: to whack it back then gain a point for how many cheeky cats your able to catch :smiley_cat:. In order to start the game You the User must click on the start button for the cats to get ready to pounce :joy_cat: :candy: :dango: :lollipop: :joy_cat:. ####
 
-![screenshot-whack-a-cat-game](https://user-images.githubusercontent.com/45575016/151608631-746cea94-03b7-457b-9dbb-230489453927.png)
+<div>
+<img src="https://user-images.githubusercontent.com/45575016/151611276-fdb9ace4-7a97-4d90-9bc2-71009782e02a.png" width="350">
+</div>
 
 # next project Idea:
 
