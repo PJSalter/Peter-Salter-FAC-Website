@@ -24,13 +24,15 @@
 - [x] I've included a feature Hamburger menu which includes the hamburger icon which opens up as a navigation draw to each page of the website.
 - [x] Image Carousel that presents a slideshow of my art with previous/next arrow buttons that show/hide the next image in a list.
 - [x] A theme toggle button on my 'why I am applying to FAC' page which switches from light and dark themes on the page.
-- [x] A whack a cat cat which starts once a user clicks the button, this interacts cats pouncing out of cotton candy clouds, the cats jump at random, the aim is to bonk as many as the user can which is talid as a score. 
+- [x] A whack a cat game(a fun interactive adventure) that starts once button is clicked, this interacts with cats pouncing out of cotton candy clouds, the cats jump at random, the aim is to bonk as many as possible which is counted as a score. 
 
 # New Technical feature:
 
+![screenshot-whack-a-cat-game](https://user-images.githubusercontent.com/45575016/151608631-746cea94-03b7-457b-9dbb-230489453927.png)
+
 #### I've recently updated my website with a fun interactive Whack-A-Cat game :cat: :paw_prints:. This consists of the cats pouncing and jumping out of Cotton Candy :pouting_cat: :lollipop: for you the user to click on the cheeky cat :cat2: to whack it back then gain a point for how many cheeky cats your able to catch :smiley_cat:. In order to start the game You the User must click on the start button for the cats to get ready to pounce :joy_cat: :candy: :dango: :lollipop: :joy_cat:. ####
 
-# Idea of a next project:
+# next project Idea:
 
 #### :pushpin: :notebook: :paperclip: I think that If I would have had more time :clock1: I would of made my website into a comic strip, simply because I'm a huge fan of comics :green_book:. Also It would of been quite imaginative flicking through the pages of the site :page_facing_up: and even clicking on the images interactively with classic comic quote bubbles :thought_balloon: defining what the image means :speech_balloon:. I even had an idea of using my illustrations to maybe come up with a comic story in the website and making those illustrations interactive hehe ####
 
